@@ -250,8 +250,253 @@ function rangewhile(n1,n2) {
 
 
 function reversefor(string){
-    for
+    var rev=""
+    for (let index = 0; index < string.length; index++) {
+        rev=strin[index]+res
+        
+    }
 }
+function reversewhile(string){
+    var rev=""
+    var index = 0;
+    while ( index < string.length) {
+        rev=strin[index]+res
+        index++   
+    }
+}
+function reverserecursive(string) {
+    if (string.length < 2) {
+      return string;
+    }
+    return reverserecursive(string.slice(1, string.length)) + string[0];
+  }
+   
+
+
+
+
+
+
+
+  function adddegit(n) {
+    var sum=0
+    while(n>0) {
+        sum=sum+n%10
+       n=Math.floor(n/10)
+    }
+    return sum
+}
+
+
+
+
+
+
+
+
+function fibRecursive(n) {
+
+    if (n===0) {
+        return 1
+    }
+    else if(n===1) {
+        return 1
+    }
+    else return   fibRecursive(n - 1) + fibRecursive(n - 2)
+  }
+
+
+
+
+
+
+
+  function firstDigit(str) {
+    var i=0
+    while ((str[i]<"0")||(str[i]>"9")){
+        i++
+    }
+   return str[i] 
+}
+firstDigit('st2r')
+
+
+
+
+
+
+
+
+function remove(array, element) {
+    var res=[]
+ for (var index = 0; index < array.length; index++) {
+     if(element!==array[index]){
+         res.push(array[index])
+     }
+ }return res
+  
+}
+
+
+
+
+
+
+
+
+
+function average(array) {
+var sum=0
+for (var index = 0; index < array.length; index++) {
+    sum+=array[index]; 
+}
+   return sum/array.length 
+  
+  }
+   
+
+
+
+
+
+
+  function max(array) {
+    var max=0
+    for (var index = 1; index < array.length; index++) {
+        if(max<array[index])
+        max=array[index]; 
+    }
+       return max
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+      function evenDigitsOnly(str) {
+        var i=0
+        while ((str[i]>"0")&&(str[i]<"9")){
+            i++
+        }
+        if((str[i]<"0")||(str[i]>"9")){
+       return false}
+       else return true
+    }
+evenDigitsOnly("input")
+
+
+
+
+
+
+
+
+
+function palindrome(str) {
+    for (var index = 0; index < str.length; index++) {
+        if(str[index]!==str[str.length-index-1]){
+            return false
+        }
+        
+    }
+  return true
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  function firstDuplicate(array) {
+    for (var index =0;index < array.length; index++) {
+        for (var index2 =index+1; index2 < array.length; index2++) {
+            if(array[index]===array[index2]){
+                return array[index]
+            }
+            
+        } 
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  function findCombinations() {
+
+    // TODO: your work goes here
+  
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     
